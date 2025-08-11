@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --legenda: attr(subtitle)
+}
+
 body {
     padding-block: 3.5rem;
 }
@@ -16,4 +20,11 @@ body {
 .gallery img {
     width: 100%;
     padding-block: 8px;
+}
+
+.gallery::after {
+    content: var(--legenda);
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 5.5rem;
 }
