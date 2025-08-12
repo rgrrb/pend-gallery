@@ -8,7 +8,7 @@ function createContent(urlContent) {
     img.src = urlContent.url
     subtitle.textContent = urlContent.subtitle
     gallery.appendChild(img)
-    document.documentElement.style.setProperty('--legenda', `${subtitle}`)
+    document.documentElement.style.setProperty('--legenda', gallery.appendChild(subtitle))
 }
 
 function loadImages() {
@@ -62,6 +62,7 @@ function loadImages() {
             subtitle: 'Soldado',
             url: './img/soldados.png'
         }
+        
 
 
 

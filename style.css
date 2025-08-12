@@ -22,9 +22,13 @@ body {
     padding-block: 8px;
 }
 
-.gallery::after {
+p{
+    height: 3vh;
+    opacity: 80%;
     content: var(--legenda);
+    font-size: 1rem;
     font-family: sans-serif;
     text-align: center;
-    font-size: 5.5rem;
+    font-weight: 800;
+
 }
