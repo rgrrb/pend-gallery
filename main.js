@@ -3,12 +3,19 @@
 function createContent(urlContent) {
 
     const gallery = document.getElementById('gallery')
+
+    const card = document.createElement('div')
+    card.classList.add('card')
+
     const img = document.createElement('img')
-    const subtitle = document.createElement('p')
+
     img.src = urlContent.url
-    subtitle.textContent = urlContent.subtitle
-    gallery.appendChild(img)
-    document.documentElement.style.setProperty('--legenda', gallery.appendChild(subtitle))
+
+    card.style.setProperty('--legenda', `"${urlContent.subtitle}"`)
+
+    card.appendChild(img)
+    gallery.appendChild(card)
+
 }
 
 function loadImages() {
